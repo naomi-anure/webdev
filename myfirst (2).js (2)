@@ -1,0 +1,269 @@
+console.log("Hello from external javascript")
+// variables with the let keyword
+let myName = "Samuel"
+myName = "Emmanuel"
+document.write(myName)
+
+// constants with the const keyword
+const eyeColor = "Blue"
+// eyeColor = "Green" can't reassign to a constant
+document.write(eyeColor + "<br>")
+
+/* 
+variable naming rules
+can't start with a number
+can't use special characters @, & etc
+can't use reserved keywords
+case sensitive
+can't use spaces
+convention is to use camelCase.
+
+this is a multi-line comments btw 
+*/
+
+// DATA TYPES: Primitive vs Composite
+// Primitive data types: for literals
+// Number
+let myVarName = 5
+let num = 5.4
+
+// String: in "" or '' or `` (interpolation/ template strings using backtick char)
+let str = "welcome to javascript"
+
+// concatenation: + to join strings together
+let str1 = 'Hello' + " " + 'World' + str
+
+let str2 =  `Hello World, ${str} ${3 * 5}`
+document.write(str2)
+
+let str3 = '30'
+
+// boolean: true or false
+let isTrue = true
+let isFalse = false
+
+document.write("<br>")
+document.write(1 > 5)
+
+// null
+let myVar = null
+
+// undefined
+let myVar2;
+document.write("<br>")
+document.write(myVar2)
+let myVar3 = undefined
+
+// symbol: uniqueness
+let myVar4 = Symbol("hello")
+let myVar5 = Symbol("hello")
+
+document.write("<br>")
+document.writeln(myVar4 === myVar5)
+
+// escape character: \
+let mySentence = "Hello \nWorld"
+document.write("<br>")
+console.log(mySentence)
+
+// "Nigeria is a "Great"  country\nation"
+let mySentence2 = "Nigeria is a \"Great\"  country\\nation"
+document.write("<br>")
+console.log(mySentence2)
+
+// in-built functions
+parseInt("25") // converts string to number integer
+parseFloat("25.5") // converts string to number float
+
+console.log(eval("2+2"))
+eval("console.log('hello world from eval')")
+console.log("not a number", isNaN("20"))
+
+// OPERATORS: perform operations on operands
+// Arithmethic: +, -, /, *, %
+console.log(70 + 20)
+console.log(70 - 20)
+console.log(70 / 20)
+console.log(70 * 20)
+console.log(70 % 20) // 10
+
+// increment (++) means plus 1 
+let mynum = 20
+// pre increment
+// console.log(++mynum) // 21
+
+// post-increment
+console.log(mynum++) // 20
+console.log(mynum) //21
+
+//  decrement (--) minus 1
+let myno = 10
+// post-decrement
+// console.log(myno--) // 10
+
+// pre-decrement
+console.log(--myno) // 9
+
+// relational operators: true or false (booleans)
+console.log(20 == "20") // equal = true
+console.log(20 != 21) // not equal = true
+console.log(20 === "20") // strict equal: value and type = false
+console.log(20 !== "20") // not strict equal: value and type = true
+console.log(20 < 20) // less than = false
+console.log(20 > 20) // greater than = false
+console.log(20 <= 20) // less than or equal to= true
+console.log(20 >= 20) // greater than or equal to = true
+
+
+// logical operators
+// &&, both experssions must yield true
+console.log(30 > 20 && 20 > 10) // true && true = true
+console.log(30 > 20 && 20 > 100) // true && false = false
+
+// ||, either expression can yield true
+console.log(30 > 20 || 20 > 10) // true
+console.log(30 > 20 || 20 > 100)  // true
+
+// !, not operator
+console.log(!(30 > 20 || 20 > 10)) // true
+console.log(!(30 > 20 || 20 > 100)) // false
+
+// assignment operators
+let value = 10
+// value = value + 2
+value += 2
+value -= 2
+value *= 2
+value /= 2
+value %= 2
+console.log(value)
+
+// bitwise operators
+// 5 = 0101
+// 1 = 0001
+//xor: 0100
+//  or:   0101
+//  and:  0001
+
+// & (bitwise and)
+console.log(5 & 1) // 1
+
+// | (bitwise or)
+console.log(5 | 1) // 5
+
+// ^ (XOR) 
+console.log(5 ^ 1) // 4
+
+// ~ (bitwise not)
+console.log(~5) //  1010 = -6
+
+// typeof
+typeof "hello world" // string
+typeof 20 // number
+typeof true // boolean
+
+let numV = 12
+
+console.log(++numV + (3 * 5))
+
+// if else
+let drivers_licence = false
+let drunk = true
+let can_drive;
+
+if (drivers_licence && !drunk) {
+    can_drive = true
+    console.log("you can drive!")
+
+} else {
+    can_drive = false
+    console.log("you can't drive!")
+}
+
+
+let time = 11
+let greeting;
+
+if (time <= 11) {
+    greeting = "good morning"
+} else if (time < 16) {
+    greeting = "good afternoon"
+} else if (time < 20) {
+    greeting = "good evening"
+} else {
+    greeting = "good night"
+}
+
+console.log(greeting)
+
+// nested if
+let learnCode;
+let hasPc = true;
+let willingness = true;
+
+if (hasPc) {
+    if (willingness) {
+        learnCode = true;
+    } else {
+        learnCode = false;
+    }
+}
+
+// Date() object
+let date = new Date()
+let date2 = new Date("1999-01-01")
+console.log(date)
+console.log(date2)
+
+let today = new Date().getDay()
+console.log(today)
+let day;
+switch (today) {
+    case 0:
+        day = "Sunday"
+        break;
+    case 1:
+        day = "Monday"
+        break;
+    case 2:
+        day = "Tuesday"
+        break;
+    case 3:
+        day = "Wednesday"
+        break;
+    case 4:
+        day = "Thursday"
+        break;
+    case 5:
+        day = "Friday"
+        break;
+    case 6:
+        day = "Saturday"
+        break;
+    default:
+        day = "Invalid day"
+        break;
+}
+
+console.log(day)
+
+// practice: if today is sunday/saturday
+// display "happy weekend" on console
+// else "display looking forward 
+// to the weekend" on console
+
+let todayy = new Date().getDay()
+
+// if (today2 is sunday or today2 is saturday)
+//     console.log("happy weekend")
+// else
+//     console.log("looking forward to the weekend")
+
+
+
+if (todayy == 0 || todayy == 6) {
+    console.log("Happy Weekend")
+} else {
+    console.log("Looking forward to the weekend")
+}
+// home practice: use the switch version for the above

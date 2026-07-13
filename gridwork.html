@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>GRID</title>
+        <style>
+.container{
+    display: Grid;
+    grid-template-areas:
+    "header" "header" "header"
+    "menu" "main" "right"
+    "menu" "footer" "footer";
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: 80px 120px 80px;
+    width:800px;
+    border:2px solid rgb(76, 155, 207);
+
+}
+.header{
+    grid-area:header;
+}
+.menu{
+    grid-area:menu;
+}
+.main{
+    grid-area:main;
+}
+.riht{
+    grid-area:right;
+}
+.footer{
+    grid-area:footer;
+}
+
+
+
+.container > div{
+    border:2px solid blue;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:25px;
+}
+        </style>
+        <body>
+            <div class="container">
+                <div class="header">Header</div>
+                <div class="menu">Menu</div>
+                <div class="main">Main</div>
+                <div class="right">Right</div>
+                <div class="footer">Foooter</div>
+
+            </div>
+        </body>
+    </head>
+</html>

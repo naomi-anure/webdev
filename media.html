@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>layout</title>
+        <style>
+            #parent{
+                display: flex; /*flex-direction:row; /* to set main-axis: row, row reverse, column-reverse*/
+                /* flex-wrap:wrap; (wrap-reverse)*/
+                flex-flow:row wrap-reverse;
+                justify-content: space-around; /* main-axis, flex-start, flex-end, space-between, space-around*/
+                align-items:flex-start; /* cross-axis: flex-start, flex-end, center, stretch*/
+                align-items: center;
+                background:gray;
+                padding: 10px;
+                height: 400px;
+
+            }
+
+            #parent div{
+              background:dodgerblue;
+              padding:10px;
+              margin: 10px;
+              
+
+            }
+           
+           
+        </style>
+    </head>
+    <body>
+<div id="parent">
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+    <div>itme 5</div>
+
+</div>
+<span>this is a span</span>
+    </body>
+</html>

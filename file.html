@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+            div img{
+                background-color:black;
+                height: 200px;
+                width: 200px;
+                position: relative;
+                animation-name: myanim;
+                animation-duration:5s;
+                animation-iteration-count:2;
+                animation-timing-function:linear;
+                animation-direction:alternate-reverse;
+                animation-fill-mode:both;
+                cursor:pointer;
+            
+
+
+            }
+            @keyframes myanim{
+                0%{
+                   background-color:red;
+                   top:0px;
+                   left:0px; 
+                }
+                25%{
+                    background-color: green;
+                    bottom:5px;
+                    left: 10px;
+                
+                }
+                50%{
+                    background-color: purple;
+                    left: 10px;
+                    top:200px;
+
+                }
+                75%{
+                    background-color: orange;
+                    top:200px;
+                    left:100px;
+                }
+                100%{
+                    background-color: gray;
+                    top:200px;
+                    right:100px;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>PRACTICALS</h1>
+        <div>
+            <img src="beautiful-rose-nature.jpg">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Display</title>
+        <style>
+            div{
+              position: relative;
+              width:100%;
+              margin:0px;
+              font-size:30px;
+        
+            }
+            div img{
+                width:100%;
+                
+            }
+
+            .top-left-overlay{
+                position:absolute;
+                top:15px;
+                left:15px;
+                padding:20px;
+
+            }
+            .top-right-overlay{
+            position: absolute;
+            float: right;
+            padding:20px;
+            float: right;
+            }
+
+            .center{ 
+                position: absolute ;
+                justify-content:center;
+                align-items:center;
+                height:100px;
+                
+                
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="IMG_8254 (1).JPG" width="100px" height="600px">
+            <div class="top-left-overlay">top left</div>
+            <div class="top-right-overlay">top right</div>
+            <div class="center">center</div>
+            <div>bottom left</div>
+            <div>bottom right</div>
+        </div>
+    </body>
+</html>

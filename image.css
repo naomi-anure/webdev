@@ -1,0 +1,9 @@
+div{
+    width:200%;
+    height:200px;
+}
+img{
+    background-image:("IMG_8468.JPG");
+    background-size:cover;
+    background-position:center;
+}
